@@ -1,0 +1,41 @@
+:root {
+    //thay doi mau va size
+    // --page-bg: honeydew;
+    --loader-bar-bg: darkcyan;
+    --loader-bar-width: 1vmin;
+
+    .loader {
+        position: relative;
+        width: 7vmin;
+        aspect-ratio: 1;
+        background: conic-gradient(transparent, transparent 12%, var(--loader-bar-bg));
+        border-radius: 50%;
+        margin: auto;
+        animation: spin 1.1s linear infinite;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            border-radius: inherit;
+        }
+        &::before {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            // background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+            background: linear-gradient(to left, var(--loader-bar-bg) 50%, transparent 50%);
+            width: var(--loader-bar-width);
+            aspect-ratio: 1;
+        }
+        &::after {
+            inset: var(--loader-bar-width);
+            background: #fff;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(1turn);
+            }
+        }
+    }
+}

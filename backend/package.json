@@ -1,20 +1,35 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.20.3",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.1",
-    "mysql2": "^3.11.4",
-    "sequelize": "^6.37.5"
-  }
+    "name": "backend_demo",
+    "private": true,
+    "version": "0.0.0",
+    "type": "commonjs",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "bcrypt": "^5.1.1",
+        "bcryptjs": "^3.0.2",
+        "body-parser": "^1.20.3",
+        "cloudinary": "^1.41.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "jsonwebtoken": "^9.0.2",
+        "multer": "^1.4.5-lts.2",
+        "multer-storage-cloudinary": "^4.0.0",
+        "mysql2": "^3.13.0",
+        "nodemailer": "^6.10.0",
+        "preact": "^10.26.2"
+    },
+    "devDependencies": {
+        "@preact/preset-vite": "^2.10.1",
+        "vite": "^6.2.0"
+    },
+    "main": "vite.config.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
 }
